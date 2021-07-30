@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Welcome (){
+export default function Header (){
  const date = new Date ()
  const hours = date.getHours()
  let timeOfDay
@@ -14,7 +14,7 @@ export default function Welcome (){
      timeOfDay = "evening! 🌚 "
  }
   return(
-<h1 className ="header">Good {timeOfDay}</h1>
+<h1 className ="item">Good {timeOfDay}</h1>
   )
   
-}
+};
