@@ -3,6 +3,9 @@ import React from "react";
 
 export default function Main() {
     const { isLoading, error, data } = useFetch("https://api.artic.edu/api/v1/artworks/129884");
+
+   const randomArt= (Math.floor(100000 + Math.random() * 900000));
+
   
     if (isLoading) return "Loading...";
     if (error) return "Error!";
